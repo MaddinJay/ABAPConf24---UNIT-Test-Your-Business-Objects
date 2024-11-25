@@ -61,7 +61,7 @@ CLASS zcl_ve_average_rating_mj IMPLEMENTATION.
     result = products.
 
     LOOP AT result ASSIGNING FIELD-SYMBOL(<product>).
-      <product>-AverageRating = average_product_ratings[ Product = <product>-ProductId ]-average_rating.
+      <product>-AverageRating = VALUE #( average_product_ratings[ Product = <product>-ProductId ]-average_rating OPTIONAL ).
     ENDLOOP.
   ENDMETHOD.
 
