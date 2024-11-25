@@ -14,21 +14,24 @@ CLASS zcl_ve_average_rating_mj IMPLEMENTATION.
 
   METHOD if_sadl_exit_calc_element_read~calculate.
     DATA products TYPE STANDARD TABLE OF Z_C_Product_M_MJ.
+
     products = CORRESPONDING #( it_original_data ).
 
+    " Read the ratings for the product(s) from the Z_C_Product_M_MJ entity
     READ ENTITIES OF Z_C_Product_M_MJ
       ENTITY Product BY \_Rating
       FIELDS ( Rating )
       WITH CORRESPONDING #( products )
       RESULT FINAL(ratings).
 
-    SELECT
-      Product,
-      AVG( rating AS DEC( 2, 1 ) ) AS average_rating
+    " Calculate the average rating for each product by DB select
+    SELECT Product,
+           AVG( rating AS DEC( 2, 1 ) ) AS average_rating
       FROM @ratings AS r
       GROUP BY Product
       INTO TABLE @DATA(average_product_ratings).
 
+    " Map average ratings to the products (output)
     LOOP AT products ASSIGNING FIELD-SYMBOL(<product>).
       READ TABLE average_product_ratings
         WITH KEY Product = <product>-ProductId
