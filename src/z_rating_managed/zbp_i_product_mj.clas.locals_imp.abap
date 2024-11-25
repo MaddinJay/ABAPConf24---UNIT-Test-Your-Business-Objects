@@ -81,6 +81,10 @@ CLASS lhc_rating IMPLEMENTATION.
     ENDLOOP.
   ENDMETHOD.
 
+  METHOD is_rating_valid.
+    result = xsdbool( rating >= 1 AND rating <= 5 ).
+  ENDMETHOD.
+
   METHOD set_status_new.
     DATA ratings_for_update TYPE TABLE FOR UPDATE z_i_rating_mj.
 
@@ -176,10 +180,6 @@ CLASS lhc_rating IMPLEMENTATION.
                         COND #( WHEN rating-Status = 30
                                 THEN if_abap_behv=>fc-o-disabled ELSE if_abap_behv=>fc-o-enabled   )
                    ) ).
-  ENDMETHOD.
-
-  METHOD is_rating_valid.
-    result = xsdbool( rating >= 1 AND rating <= 5 ).
   ENDMETHOD.
 
 ENDCLASS.
