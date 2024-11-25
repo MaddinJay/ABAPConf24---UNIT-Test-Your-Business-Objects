@@ -69,7 +69,7 @@ CLASS lhc_rating IMPLEMENTATION.
         RESULT DATA(ratings).
 
     LOOP AT ratings ASSIGNING FIELD-SYMBOL(<rating>).
-      IF <rating>-rating < 0 OR <rating>-rating > 5.
+      IF is_rating_valid( <rating>-rating ) = abap_false.
         APPEND VALUE #( %key = <rating>-%key ) TO failed-rating.
 
         APPEND VALUE #( %key = <rating>-%key
@@ -177,7 +177,6 @@ CLASS lhc_rating IMPLEMENTATION.
                                 THEN if_abap_behv=>fc-o-disabled ELSE if_abap_behv=>fc-o-enabled   )
                    ) ).
   ENDMETHOD.
-
 
   METHOD is_rating_valid.
     result = xsdbool( rating >= 1 AND rating <= 5 ).
