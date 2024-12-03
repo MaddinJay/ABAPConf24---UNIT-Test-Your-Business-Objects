@@ -44,7 +44,7 @@ This repository is open for collaboration!
 
 ---
 
-Feel free to **clone** this repo, create **issues**, or submit **pull requests**. Let’s build a community of clean coders together!  
+Let’s build a community of clean coders together!  
 
 Happy ABAPing,  
 **Martin**  
