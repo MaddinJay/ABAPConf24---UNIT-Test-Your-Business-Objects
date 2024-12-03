@@ -20,6 +20,10 @@ This repository is originally a copy of the SAP Steampunk Repo https://github.co
 
 Clone that repo to your SAP system and train yourself by using the presentation and Commit history of this repo.
 
+**Important:**
+This repo here does not contain all objects which Christian provided in his repo. So, clone his repo and work on that one to improve your clean coder skills. Use this repo to look 
+into the commit history or adapted classes to get the idea how to build the UNIT test methods on your own.
+
 Or...
 
 ---
