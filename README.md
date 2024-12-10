@@ -30,7 +30,7 @@ Or...
 ## **Join the ABAP Conscious Clean Coder Hub**  
 Interested in clean code, unit testing, and improving ABAP practices?  
 
-👉 **[DM via LinkedIn]([https://www.yourhublink.com](https://www.linkedin.com/in/martin-jonen/))** 👈  
+👉 **[DM via LinkedIn](https://www.linkedin.com/in/martin-jonen/)** 👈  
 
 Together, we can work on this repository, share ideas, and drive the adoption of clean coding principles in ABAP development.  
 
