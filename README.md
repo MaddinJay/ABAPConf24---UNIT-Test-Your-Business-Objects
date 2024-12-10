@@ -1,7 +1,7 @@
 # ABAPConf 2024: Unit Test Your Business Objects in RAP 
 
 Welcome to the repository for my **ABAPConf 2024 presentation**, _"Unit Test Your Business Objects in RAP."_ Here, you'll find:  
-- **Presentation Slides**: [Download the slides here](./ABAPConf2024_Presentation.pdf).  
+- **Presentation Slides**: [Download the slides here](https://github.com/MaddinJay/ABAPConf24---UNIT-Test-Your-Business-Objects/blob/main/PDFs/ABAPConf%2024%20-%20UNIT%20Test%20your%20Business%20Objects%20in%20RAP%20Framework_05.12.2024.pdf).  
 - **Session Recording**: Watch the session on [YouTube](https://www.youtube.com/live/SnKqmgOMdqY?si=Uq1mWlsGte5l_dxI&t=16069).  
 
 ---
