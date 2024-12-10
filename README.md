@@ -2,7 +2,7 @@
 
 Welcome to the repository for my **ABAPConf 2024 presentation**, _"Unit Test Your Business Objects in RAP."_ Here, you'll find:  
 - **Presentation Slides**: [Download the slides here](./ABAPConf2024_Presentation.pdf).  
-- **Session Recording**: Watch the session on [YouTube](https://www.youtube.com/your-session-link).  
+- **Session Recording**: Watch the session on [YouTube]([https://www.youtube.com/your-session-link](https://www.youtube.com/live/SnKqmgOMdqY?si=Uq1mWlsGte5l_dxI&t=16069)).  
 
 ---
 
